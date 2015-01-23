@@ -5,7 +5,7 @@ class DataRepository
 
   def initialize(path = ROOT_PATH)
     @path = path
-    @text_data = ''
+    @text_data = []
     # ver se existe o diretório
     # ver se existe o arquivo dentro.
   end

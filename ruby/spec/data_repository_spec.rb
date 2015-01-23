@@ -39,9 +39,9 @@ describe DataRepository do
       data_repository.path = 'spec/data-test/data.txt'
       data_repository.read
 
-      data_test = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n\n"
+      data_test = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n"
 
-      expect(data_repository.text_data).to eq(data_test)
+      expect(data_repository.text_data[0]).to eq(data_test)
     end
   end
 end

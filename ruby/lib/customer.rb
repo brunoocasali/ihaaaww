@@ -1,9 +1,9 @@
 class Customer
-  attr_accessor :type, :date, :best_choose
+  attr_accessor :type, :dates, :best_choose
 
-  def initialize(type = CustomerType::REGULAR, date = [], best_choose = nil)
+  def initialize(type = CustomerType::REGULAR, dates = [], best_choose = nil)
     @type = type
-    @date = date
+    @dates = date
     @best_choose = best_choose
   end
 
