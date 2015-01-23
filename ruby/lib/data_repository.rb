@@ -1,27 +1,25 @@
 class DataRepository
   ROOT_PATH = 'data/data.txt'
 
-  attr_accessor :path
+  attr_accessor :path, :text_data
 
   def initialize(path = ROOT_PATH)
     @path = path
+    @text_data = ''
     # ver se existe o diretório
     # ver se existe o arquivo dentro.
   end
 
-  def has_text_data?
-    counter = 0
-
+  def read
     if has_file?
       file = File.new(@path, 'r')
 
       while (line = file.gets)
-        counter += 1
+        @text_data << line
       end
+
       file.close
     end
-
-    counter
   end
 
   def has_file?

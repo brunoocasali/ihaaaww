@@ -9,7 +9,7 @@ describe DataRepository do
     end
 
     it "is invalid if 'data' dir ins't exists" do
-      data_repository.path = 'any-directory/'
+      data_repository.path = 'spec/data'
 
       expect(data_repository).to_not have_data_directory
     end
@@ -21,18 +21,28 @@ describe DataRepository do
     end
 
     it "is invalid if doesn't have a .txt extension" do
-      data_repository.path = 'any-directory/any-file.rb'
+      data_repository.path = 'spec/data-test/data.file'
 
       expect(data_repository).to_not have_file
     end
 
     it 'is usable if have any text data' do
-      expect(data_repository.has_text_data?).to be > 0
+      data_repository.path = 'spec/data-test/data.txt'
+      data_repository.read
+
+      expect(data_repository.text_data).to_not be_nil
     end
   end
 
   context 'when talked about a text data inside the file' do
-    it 'needs to have a data in a correct form'
+    it 'needs to be readed as well' do
+      data_repository.path = 'spec/data-test/data.txt'
+      data_repository.read
+
+      data_test = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n\n"
+
+      expect(data_repository.text_data).to eq(data_test)
+    end
   end
 end
 
