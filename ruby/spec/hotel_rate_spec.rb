@@ -1,5 +1,4 @@
 require 'hotel_rate'
-require 'customer_type'
 
 describe HotelRate do
   let(:rate) { HotelRate.new(CustomerType::REWARDS, DayType::WEEKEND, 63) }

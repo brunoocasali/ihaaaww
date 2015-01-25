@@ -19,8 +19,7 @@ describe HotelFinder do
     @hotel_1 = Hotel.new('Lakewood', 3, [lake_rate_0, lake_rate_1, lake_rate_2, lake_rate_3])
     @hotel_2 = Hotel.new('Bridgewood', 4, [bridge_rate_0, bridge_rate_1, bridge_rate_2, bridge_rate_3])
 
-    hotels << @hotel_1
-    hotels << @hotel_2
+    hotels << @hotel_1 << @hotel_2
   }
 
   let(:finder) { HotelFinder.new(hotels) }
@@ -69,6 +68,17 @@ describe HotelFinder do
       expect(customer.best_choose).to eq(@hotel_1)
     end
 
+    it "in case of a tie the hotel with highest rating needs to be choosed" do
+      customer.dates = %w(24Jan2015(sat) 25Jan2015(sun))
+      hotels.first.rates.delete_at(0)
+      lake_rate_0 = HotelRate.new(CustomerType::REGULAR, DayType::WEEKEND, 80)
+
+      hotels.first.rates.push(lake_rate_0)
+
+      finder.hotel_find_for(customer)
+
+      expect(customer.best_choose).to eq(@hotel_2)
+    end
   end
 end
 

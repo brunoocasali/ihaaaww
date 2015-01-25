@@ -1,5 +1,4 @@
 require 'customer'
-require 'customer_type'
 
 describe Customer do
   let(:customer) { Customer.new }

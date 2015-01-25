@@ -1,2 +1,21 @@
+Regular: 16Jan2015(mon), 17Jan2015(tues), 18Jan2015(wed)
+Regular: 20Jan2015(fri), 21(sat), 22Jan2015(sun)
+Rewards: 26Jan2015(wed), 27Jan2015(fri), 28Jan2015(sat),
+Rewards: 26Jan2015(thur), 27Jan2015(fri), 28Jan2015(sat),
+Rewards: 26Jan2015(thur), 27Jan2015(fri), 9(sat)
+Regular: 20Jan2015(fri), 21Jan2015(sat), 22Jan2015(sun),
+Rewards: 26Jan2015(thur), 27Jan2d), 28Jan2015(sat),
+Rewards: 26Janur), 27Jan2015(fri), 28Jan2015(wwe)
+Rewards: 26Jan2015(thur), 27Jan2015(fri), 28Jan2015(sat),
+Regular: 20Jan2015(fri), 21Jan2015(sat), 2
+Rewards: 26Janur), 27Jan2015(fri), 28Jan2015(sat)
+Regular: 20Jan2015(fri), 21Jan2015(sat), 22Jan2015(sun)
+Regular: 20Jan2015(sun), 21sat), 22Jan2015(mon)
+-----------------------
+Regular: 20Jan2015(sun), 21Jan2015(mon), 22Jan2015(tue), 22Jan2015(tue),
+Regular: 20Jan2015(sun), 21Jan2015(sat), 22Jan2015(mon)
+----------------- test from problem! :D
 Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)
+Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun)
+Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat)
 

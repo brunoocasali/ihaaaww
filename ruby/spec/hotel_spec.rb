@@ -1,7 +1,4 @@
 require 'hotel'
-require 'hotel_rate'
-require 'day_type'
-require 'customer'
 
 describe Hotel do
   let(:customer) { Customer.new }
