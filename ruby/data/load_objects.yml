@@ -1,0 +1,145 @@
+--- !ruby/object:Hotel
+name: Lakewood
+rating: 3
+rates:
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &1
+  - sun
+  - sat
+  price: 90
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &2
+  - mon
+  - tue
+  - tues
+  - wed
+  - thu
+  - thur
+  - fri
+  price: 110
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *1
+  price: 80
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *2
+  price: 80
+--- !ruby/object:Hotel
+name: Bridgewood
+rating: 4
+rates:
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &1
+  - sun
+  - sat
+  price: 60
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &2
+  - mon
+  - tue
+  - tues
+  - wed
+  - thu
+  - thur
+  - fri
+  price: 160
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *1
+  price: 50
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *2
+  price: 110
+--- !ruby/object:Hotel
+name: Ridgewood
+rating: 5
+rates:
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &1
+  - sun
+  - sat
+  price: 150
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &2
+  - mon
+  - tue
+  - tues
+  - wed
+  - thu
+  - thur
+  - fri
+  price: 220
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *1
+  price: 40
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *2
+  price: 100
+--- !ruby/object:Hotel
+name: RobinWood
+rating: 4
+rates:
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &1
+  - sun
+  - sat
+  price: 160
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &2
+  - mon
+  - tue
+  - tues
+  - wed
+  - thu
+  - thur
+  - fri
+  price: 99
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *1
+  price: 84
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *2
+  price: 50
+--- !ruby/object:Hotel
+name: TigerWood
+rating: 6
+rates:
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &1
+  - sun
+  - sat
+  price: 200
+- !ruby/object:HotelRate
+  customer_type: Regular
+  day_types: &2
+  - mon
+  - tue
+  - tues
+  - wed
+  - thu
+  - thur
+  - fri
+  price: 198
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *1
+  price: 99
+- !ruby/object:HotelRate
+  customer_type: Rewards
+  day_types: *2
+  price: 91
