@@ -15,3 +15,13 @@ lakewood_rates = []
 
 lakewood_hotel = Hotel.new('Lakewood', 3, lakewood_rates)
 
+data_repository = DataRepository.new
+data_repository.read
+
+data_repository.text_data.each do |line|
+  customer = CustomerBuilder.create(line)
+  HotelFinder.hotel_find_for(customer)
+
+  customer.best_choose.name
+end
+
