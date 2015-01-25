@@ -1,5 +1,6 @@
 class HotelFinder
   A_BIG_INT = 2_919_988_999
+
   attr_accessor :hotels
 
   def initialize(hotels)
@@ -20,7 +21,6 @@ class HotelFinder
       if cheapest_price > sum
         cheapest_price = sum
         customer.best_choose = hotel
-        puts 'gay'
       elsif cheapest_price == sum
         if hotel.rating > customer.best_choose.rating
           customer.best_choose = hotel

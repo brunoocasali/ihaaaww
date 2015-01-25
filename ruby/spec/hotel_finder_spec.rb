@@ -4,8 +4,8 @@ describe HotelFinder do
   let(:hotels) {
     hotels ||= []
 
-    lake_rate_0 = HotelRate.new(CustomerType::REGULAR, DayType::WEEKEND, 80)
-    lake_rate_2 = HotelRate.new(CustomerType::REWARDS, DayType::WEEKEND, 90)
+    lake_rate_0 = HotelRate.new(CustomerType::REGULAR, DayType::WEEKEND, 90)
+    lake_rate_2 = HotelRate.new(CustomerType::REWARDS, DayType::WEEKEND, 80)
 
     lake_rate_1 = HotelRate.new(CustomerType::REGULAR, DayType::WEEKDAYS, 110)
     lake_rate_3 = HotelRate.new(CustomerType::REWARDS, DayType::WEEKDAYS, 80)

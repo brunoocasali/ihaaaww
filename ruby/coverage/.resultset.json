@@ -342,11 +342,7 @@
         null,
         1,
         null,
-        1,
         null,
-        null,
-        1,
-        1,
         1,
         1,
         null,
@@ -362,9 +358,10 @@
       "/home/bruno/develop/projects/challenges/the-whotel/ruby/lib/hotel_finder.rb": [
         1,
         1,
-        1,
         null,
         1,
+        null,
+        1,
         4,
         null,
         null,
@@ -380,9 +377,8 @@
         4,
         null,
         4,
-        2,
-        2,
-        2,
+        3,
+        3,
         null,
         0,
         0,
@@ -518,6 +514,6 @@
         null
       ]
     },
-    "timestamp": 1422152064
+    "timestamp": 1422153536
   }
 }
