@@ -94,7 +94,7 @@ rates:
   day_types: &1
   - sun
   - sat
-  price: 160
+  price: 99
 - !ruby/object:HotelRate
   customer_type: Regular
   day_types: &2
@@ -105,15 +105,15 @@ rates:
   - thu
   - thur
   - fri
-  price: 99
+  price: 199
 - !ruby/object:HotelRate
   customer_type: Rewards
   day_types: *1
-  price: 84
+  price: 64
 - !ruby/object:HotelRate
   customer_type: Rewards
   day_types: *2
-  price: 50
+  price: 100
 --- !ruby/object:Hotel
 name: TigerWood
 rating: 6
@@ -143,3 +143,5 @@ rates:
   customer_type: Rewards
   day_types: *2
   price: 91
+ 91
+
