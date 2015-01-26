@@ -6,19 +6,13 @@ class DataRepository
   def initialize(path = ROOT_PATH)
     @path = path
     @text_data = []
-    # ver se existe o diretório
-    # ver se existe o arquivo dentro.
   end
 
   def read
     if has_file?
-      file = File.new(@path, 'r')
-
-      while (line = file.gets)
+      File.open(@path, 'r').each do |line|
         @text_data << line
       end
-
-      file.close
     end
   end
 
