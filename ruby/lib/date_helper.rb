@@ -27,6 +27,5 @@ class DateHelper
 
     valid_ones
   end
-
 end
 

@@ -1,6 +1,6 @@
 require 'yaml'
 
-Dir["lib/*.rb"].each { |file| require File.expand_path(file) }
+Dir['lib/*.rb'].each { |file| require File.expand_path(file) }
 
 class StartFinder
 
@@ -29,6 +29,5 @@ class StartFinder
       end
     end
   end
-
 end
 
